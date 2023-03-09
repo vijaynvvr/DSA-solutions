@@ -1,11 +1,11 @@
-def searchInSorted(self,arr, N, K):
+def binarySearch(arr, n, k):
     start = 0
-    end = N-1
+    end = n-1
     while start <= end:
         mid = start + (end-start)//2
-        if arr[mid] == K:
-            return 1
-        elif arr[mid] > K:
+        if arr[mid] == k:
+            return mid
+        elif arr[mid] > k:
             end = mid-1
         else:
             start = mid+1
