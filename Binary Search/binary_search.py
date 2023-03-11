@@ -1,6 +1,6 @@
-def binarySearch(arr, n, k):
-    start = 0
-    end = n-1
+def binarySearch(arr, s, e, k):
+    start = s
+    end = e
     while start <= end:
         mid = start + (end-start)//2
         if arr[mid] == k:
